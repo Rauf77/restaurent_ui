@@ -1,0 +1,30 @@
+name: restaurent_ui
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.19.3 <3.0.0'
+
+dependencies: 
+  cupertino_icons: ^1.0.2
+  get: 4.6.5
+  flutter: 
+    sdk: flutter
+  eva_icons_flutter: ^3.1.0
+  date_picker_timeline: ^1.2.5
+  google_fonts: ^4.0.4
+  cached_network_image: ^3.2.3
+  get_image_cache_network: ^1.0.0
+  persistent_bottom_nav_bar: ^5.0.2
+  card_swiper: ^3.0.1
+  map: ^1.4.1
+
+dev_dependencies: 
+  flutter_lints: 2.0.2
+  flutter_test: 
+    sdk: flutter
+
+
+
+assets:
+  - assets/images/
