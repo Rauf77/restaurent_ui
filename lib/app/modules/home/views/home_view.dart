@@ -70,11 +70,11 @@ class HomeView extends GetView<HomeController> {
               decoration: BoxDecoration(
 
                 gradient: LinearGradient(
-                    begin: Alignment.bottomLeft,
-                    end: Alignment.topRight,
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
                     colors: [
                       Colors.amber,
-                      Colors.white
+                      Colors.amberAccent
 
                 ])
               ),
@@ -94,6 +94,7 @@ class HomeView extends GetView<HomeController> {
                       onDateChange: _.setSelectedDate,
                       locale: 'ja_JP',
 
+
                     ),
                   ),
                   InkWell(
@@ -106,6 +107,7 @@ class HomeView extends GetView<HomeController> {
                       child: Container(
                         height: h/2.3,
                         width: w,
+
 
                         decoration: BoxDecoration(
                             boxShadow: [
@@ -127,6 +129,30 @@ class HomeView extends GetView<HomeController> {
                             Container(
                               height: h / 5,
                               width: w,
+
+                              child: Stack(
+                                alignment: AlignmentDirectional.bottomStart,
+                                children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 10),
+                                  child: Container(
+                                    width: w/3.5,
+                                    height: h/27,
+                                    
+                                    decoration: BoxDecoration(
+                                      color: Colors.red[400],
+                                      borderRadius: BorderRadius.circular(5)
+                                    ),
+                                    child: Center(child: Text('本日まで',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 20,color: Colors.white),))),
+                                ),
+
+
+
+
+
+
+                                ],
+                              ),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.only(
                                   topRight: Radius.circular(20),
@@ -214,118 +240,149 @@ class HomeView extends GetView<HomeController> {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding:  EdgeInsets.fromLTRB(0, 8,0, 0),
-                    child: Container(
-                      height: h/2.3,
-                      width: w,
+                  InkWell(
+                    onTap: (){
+                      Get.to(CarddetailesView());
 
-                      decoration: BoxDecoration(
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey,
-                              offset: Offset(0, 2), // specifies the offset of the shadow
-                              blurRadius: 4, // defines the blur radius of the shadow
-                              spreadRadius: 1, // determines the spread of the shadow
-                            ),
-                          ],
-                          borderRadius: BorderRadius.circular(20),
-                          color: Colors.white
+                    },
+                    child: Padding(
+                      padding:  EdgeInsets.fromLTRB(0, 8,0, 0),
+                      child: Container(
+                        height: h/2.3,
+                        width: w,
 
 
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: h / 5,
-                            width: w,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.only(
-                                topRight: Radius.circular(20),
-                                topLeft: Radius.circular(20),
+                        decoration: BoxDecoration(
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey,
+                                offset: Offset(0, 2), // specifies the offset of the shadow
+                                blurRadius: 4, // defines the blur radius of the shadow
+                                spreadRadius: 1, // determines the spread of the shadow
                               ),
-                              image: DecorationImage(
-                                image: NetworkImage('https://media.istockphoto.com/id/1313694706/photo/attractive-young-senior-asian-female-citizen-happy-face-with-nurse-at-home-in-morning-in.jpg?s=612x612&w=0&k=20&c=JZYOJacXGhhj_J_oV_rERNbS2XO4tks3BgcDckscWVw='),
-                                fit: BoxFit.cover,
+                            ],
+                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.white
+
+
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: h / 5,
+                              width: w,
+
+                              child: Stack(
+                                alignment: AlignmentDirectional.bottomStart,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(bottom: 10),
+                                    child: Container(
+                                        width: w/3.5,
+                                        height: h/27,
+
+                                        decoration: BoxDecoration(
+                                            color: Colors.red[400],
+                                            borderRadius: BorderRadius.circular(5)
+                                        ),
+                                        child: Center(child: Text('本日まで',style: TextStyle(fontWeight: FontWeight.w500,fontSize: 20,color: Colors.white),))),
+                                  ),
+
+
+
+
+
+
+                                ],
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.only(
+                                  topRight: Radius.circular(20),
+                                  topLeft: Radius.circular(20),
+                                ),
+                                image: DecorationImage(
+                                  image: NetworkImage('https://img.freepik.com/free-photo/young-asian-female-nurse-care-giver-helping-asian-senior-old-man-with-mobility-walker-living-area-nursing-home-senior-daycare-centernurse-take-care-elderly-patient-with-cheerful-concentrate_609648-3109.jpg?w=2000'),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
-                          ),
 
 
-                          Padding(
-                            padding:  EdgeInsets.only(top: 5,left: 10,right: 10),
-                            child: Text('介護有料老人ホームひまわり倶楽部の介護職／ヘルパー求人（パート／バイト）',
-                              style: GoogleFonts.lato(
-                                  textStyle: TextStyle(
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.w500,
-                                    color:Colors.black,
-                                  )
+                            Padding(
+                              padding:  EdgeInsets.only(top: 5,left: 10,right: 10),
+                              child: Text('介護有料老人ホームひまわり倶楽部の介護職／ヘルパー求人（パート／バイト）',
+                                style: GoogleFonts.lato(
+                                    textStyle: TextStyle(
+                                      fontSize: 15,
+                                      fontWeight: FontWeight.w500,
+                                      color:Colors.black,
+                                    )
+                                ),
+
                               ),
-
                             ),
-                          ),
-                          Padding(
-                            padding:EdgeInsets.only(top: 5,left: 10,right: 10),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Container(
-                                  height: 30,
-                                  width: w/2.5,
-                                  child: Center(
-                                    child: Text(
-                                      '介護付き有料老人ホーム',
-                                      style: GoogleFonts.lato(
-                                          textStyle: TextStyle(
-                                              fontSize: 14,
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.amber
-                                          )
+                            Padding(
+                              padding:EdgeInsets.only(top: 5,left: 10,right: 10),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    height: 30,
+                                    width: w/2.5,
+                                    child: Center(
+                                      child: Text(
+                                        '介護付き有料老人ホーム',
+                                        style: GoogleFonts.lato(
+                                            textStyle: TextStyle(
+                                                fontSize: 14,
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.amber
+                                            )
+                                        ),
                                       ),
                                     ),
+                                    decoration: BoxDecoration(
+                                      color: Colors.amber[200],
+                                      borderRadius: BorderRadius.circular(5),
+                                    ),
                                   ),
-                                  decoration: BoxDecoration(
-                                    color: Colors.amber[200],
-                                    borderRadius: BorderRadius.circular(5),
-                                  ),
-                                ),
-                                Text('¥ 6,000',style: TextStyle(fontSize:
-                                20),)
-                              ],
+                                  Text('¥ 6,000',style: TextStyle(fontSize:
+                                  20),)
+                                ],
+                              ),
                             ),
-                          ),
 
-                          Padding(
-                            padding: EdgeInsets.only(top: 5,left: 10,right: 10),
-                            child: Text('5月 31日（水）08 : 00 ~ 17 : 00',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black),),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 5,left: 10,right: 10),
-                            child: Text('北海道札幌市東雲町3丁目916番地17号',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black),),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 5,left: 10,right: 10),
-                            child: Text('交通費 300円',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black),),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(top: 5,left: 10,right: 10),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
-                                Text('住宅型有料老人ホームひまわり倶楽部',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.grey),),
-                                Icon(EvaIcons.heartOutline,color: Colors.grey,)
-                              ],
+                            Padding(
+                              padding: EdgeInsets.only(top: 5,left: 10,right: 10),
+                              child: Text('5月 31日（水）08 : 00 ~ 17 : 00',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black),),
                             ),
-                          ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5,left: 10,right: 10),
+                              child: Text('北海道札幌市東雲町3丁目916番地17号',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black),),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5,left: 10,right: 10),
+                              child: Text('交通費 300円',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.black),),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(top: 5,left: 10,right: 10),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('住宅型有料老人ホームひまわり倶楽部',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: Colors.grey),),
+                                  Icon(EvaIcons.heartOutline,color: Colors.grey,)
+                                ],
+                              ),
+                            ),
 
 
-                        ],
+                          ],
+                        ),
+
                       ),
-
                     ),
-                  )
+                  ),
 
                 ],
               ),

@@ -79,6 +79,7 @@ class CarddetailesView extends GetView<CarddetailesController> {
              Container(
                height: h/1.255,
                width: w,
+
                child: ListView(
                  children:[
                    SingleChildScrollView(
@@ -91,9 +92,99 @@ class CarddetailesView extends GetView<CarddetailesController> {
                            child: Container(
                              height: h/3,
                              width: w,
+                             child: Column(
+                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                               children: [
+                                 Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                                   children: [
+                                     CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),
+                                     CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),
+
+                                   ],
+                                 ),
+                                 Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                                   children: [
+                                     CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),
+                                     CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),
+
+                                   ],
+                                 ),
+                                 Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                                   children: [
+                                     CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),
+                                     CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),CircleAvatar(
+                                       child: Icon(EvaIcons.checkmark,color: Colors.white,size: 40,),
+                                       backgroundColor: Colors.green,
+                                       radius: h/22,
+                                     ),
+
+                                   ],
+                                 ),
+
+                               ],
+                             ),
                              decoration: BoxDecoration(
+                               color: Colors.white,
                                  borderRadius: BorderRadius.circular(20),
-                                 image: DecorationImage(image: NetworkImage('https://www.freevector.com/uploads/vector/preview/20926/Checklist_Icon.jpg'),fit: BoxFit.cover)
+                               boxShadow: [
+                                 BoxShadow(
+                                   color: Colors.grey,
+                                   offset: Offset(0, 2), // specifies the offset of the shadow
+                                   blurRadius: 4, // defines the blur radius of the shadow
+                                   spreadRadius: 1, // determines the spread of the shadow
+                                 ),
+                               ],
+
                              ),
                            ),
                          ),
@@ -102,12 +193,266 @@ class CarddetailesView extends GetView<CarddetailesController> {
                            child: Container(
                              height: h/3,
                              width: w,
+                             child: Column(
+                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                               children: [
+                                 Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                                   children: [
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+
+                                   ],
+                                 ),
+                                 Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                                   children: [
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+
+                                   ],
+                                 ),
+                                 Row(
+                                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                                   children: [
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+                                     Container(
+                                       height: h/20,
+                                       width: h/20,
+
+                                       child: Icon(EvaIcons.close,color: Colors.white,size: 30,),
+                                       decoration: BoxDecoration(
+                                         color: Colors.red[300],
+                                         boxShadow: [
+                                           BoxShadow(
+                                             color: Colors.black54,
+                                             offset: Offset(0, 2), // specifies the offset of the shadow
+                                             blurRadius: 4, // defines the blur radius of the shadow
+                                             spreadRadius: 1, // determines the spread of the shadow
+                                           ),
+                                         ],
+                                       ),
+
+                                     ),
+
+                                   ],
+                                 ),
+
+
+                               ],
+                             ),
                              decoration: BoxDecoration(
-                                 borderRadius: BorderRadius.circular(20),
-                                 image: DecorationImage(image: NetworkImage('https://www.freevector.com/uploads/vector/preview/20926/Checklist_Icon.jpg'),fit: BoxFit.cover)
+                               color: Colors.white,
+                               borderRadius: BorderRadius.circular(20),
+                               boxShadow: [
+                                 BoxShadow(
+                                   color: Colors.grey,
+                                   offset: Offset(0, 2), // specifies the offset of the shadow
+                                   blurRadius: 4, // defines the blur radius of the shadow
+                                   spreadRadius: 1, // determines the spread of the shadow
+                                 ),
+                               ],
+
                              ),
                            ),
                          ),
+
                        ],
                      ),
                    ),
@@ -300,7 +645,7 @@ class CarddetailesView extends GetView<CarddetailesController> {
                  ]
                ),
                decoration: BoxDecoration(
-                 color: Colors.grey[50],
+                 color: Colors.grey[100],
                  borderRadius: BorderRadius.only(topRight: Radius.circular(20),topLeft: Radius.circular(20))
                ),
 

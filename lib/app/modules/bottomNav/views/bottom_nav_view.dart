@@ -55,7 +55,7 @@ class BottomNavView extends GetView<BottomNavController> {
               ),
               NavigationDestination(
 
-                icon: Icon(EvaIcons.square),
+                icon: Icon(EvaIcons.square,color: Colors.white,),
                 label: '打刻する',
               ),
               NavigationDestination(
@@ -70,6 +70,17 @@ class BottomNavView extends GetView<BottomNavController> {
               ),
             ],
           ),
+        ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: new FloatingActionButton(
+          backgroundColor: Colors.amber[300],
+
+          onPressed:(){
+            Get.to(ChatView());
+          },
+
+
+          child:Icon(EvaIcons.square) ,
         ),
       ),
     );
